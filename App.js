@@ -2,6 +2,8 @@ import React from 'react';
 import { Ionicons } from '@expo/vector-icons'
 import { AppLoading } from 'expo'
 import TabNavigation from './navigation/TabNavigation'
+import MainNavigation from './navigation/MainNavigation'
+
 
 
 export default class App extends React.Component {
@@ -24,7 +26,7 @@ export default class App extends React.Component {
     const { loaded } = this.state;
     if(loaded)
     {
-      return <TabNavigation />;      
+      return <MainNavigation />;      
     }
     else 
     {
